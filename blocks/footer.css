@@ -1,0 +1,9 @@
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__copyright {
+    margin-top: 100px;
+    max-width: 194px;
+}

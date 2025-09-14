@@ -1,0 +1,84 @@
+@import url("../vendor/normalize.css");
+@import url("../fonts/fonts.css");
+@import url("../blocks/page.css");
+@import url("../blocks/header.css");
+@import url("../blocks/lead.css");
+@import url("../blocks/intro.css");
+@import url("../blocks/footer.css");
+
+
+@media screen and (max-width: 780px) {
+    .lead {
+        padding: 56px 0 44px;
+    }
+    .lead__title {
+    font-size: 75px;
+  }
+
+  .lead__subtitle {
+    font-size: 30px;
+  }
+
+  .intro {
+    padding: 44px 24px 44px;
+  }
+
+  .intro__title {
+    font-size: 45px;
+    max-width: 707px;
+  }
+
+  .intro__subtitle {
+    font-size: 24px;
+    max-width: 720px;
+  }
+
+  .intro__author {
+    font-size: 24px;
+    padding: 0;
+    max-width: 720px;
+
+  }
+
+  .intro__text {
+    font-size: 16px;
+    max-width: 720px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+   .lead {
+        padding: 0;
+   }
+    .lead__title {
+    font-size: 40px;
+    max-width: 228px;
+  }
+  .lead__subtitle {
+    font-size: 16px;
+  }
+
+  .page {
+    padding: 20px 0 10px;
+  }
+
+  .intro__title {
+      font-size: 32px;
+    }
+
+     .intro__subtitle {
+      font-size: 24px;
+     }
+
+     .intro__author {
+      font-size: 24px;
+      padding: 0;
+      
+     }
+
+     .intro__text {
+      font-size: 16px;
+     }
+}
+
