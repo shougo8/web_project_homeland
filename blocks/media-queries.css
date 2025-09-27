@@ -198,7 +198,7 @@
   }
 
   .places__paragraph,
-  .places__paragraph_text,
+  .places__paragraph-text,
   .places__text {
     order: 4;
   }
@@ -214,7 +214,7 @@
   }
 
   .places__paragraph,
-  .places__paragraph_text,
+  .places__paragraph-text,
   .places__text,
   .places__frame,
   .places__artist {
@@ -238,7 +238,7 @@
   }
 
   .places__paragraph + .places__paragraph_text,
-  .places__paragraph_text + .places__text,
+  .places__paragraph-text + .places__text,
   .places__paragraph + .places__text {
     margin-top: 24px;
   }
