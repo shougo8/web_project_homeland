@@ -1,8 +1,15 @@
 @media screen and (max-width: 780px) {
-    .lead {
-        padding: 56px 0 44px;
-    }
-    .lead__title {
+  .page,
+  .content {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .lead {
+    padding: 56px 0 44px;
+  }
+  .lead__title {
     font-size: 75px;
   }
 
@@ -28,7 +35,6 @@
     font-size: 24px;
     padding: 0;
     max-width: 720px;
-
   }
 
   .intro__text {
@@ -36,39 +42,212 @@
     max-width: 720px;
   }
 
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 264px);
+    gap: 16px;
+    max-width: 768px;
+    margin: 48px auto 0;
+    padding: 0 24px;
+  }
+
+  .photo-grid__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .places {
+    width: 100%;
+    margin: 48px auto 0;
+  }
+
+  .places__place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+
+  .places__media {
+    width: 288px;
+  }
+
+  .places__title {
+    font-size: 42px;
+  }
+
+  .places__image {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .places__frame {
+    font-size: 18px;
+    padding: 13px 20px;
+  }
+
+  .places__content {
+    width: 440px;
+    padding: 0 24px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-   .lead {
-        padding: 0;
-   }
-    .lead__title {
+  .page {
+    max-width: 100%;
+    padding: 20px 16px 10px;
+    box-sizing: border-box;
+    font-family: "Inter";
+  }
+  
+  .content {
+    max-width: 100%;
+  }
+
+  .lead {
+    padding: 0;
+  }
+  
+  .lead__title {
     font-size: 40px;
     max-width: 228px;
   }
+  
   .lead__subtitle {
     font-size: 16px;
   }
 
-  .page {
-    padding: 20px 0 10px;
+  .intro__title {
+    font-size: 32px;
   }
 
-  .intro__title {
-      font-size: 32px;
-    }
+  .intro__subtitle {
+    font-size: 24px;
+  }
 
-     .intro__subtitle {
-      font-size: 24px;
-     }
+  .intro__author {
+    font-size: 24px;
+    padding: 0;
+  }
 
-     .intro__author {
-      font-size: 24px;
-      padding: 0;
-      
-     }
+  .intro__text {
+    font-size: 16px;
+  }
 
-     .intro__text {
-      font-size: 16px;
-     }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 213px);
+    gap: 12px;
+    max-width: 288px;
+    margin: 64px auto 0;
+    padding: 0;
+  }
+
+  .photo-grid__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .places,
+  .places__content,
+  .places__media {
+    width: auto;
+  }
+
+  .places {
+    margin-top: 64px;
+    padding: 0;
+  }
+
+  .places__place {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: "Inter";
+  }
+  .places__place:first-child {
+    margin-top: 0;
+  }
+
+  .places__media,
+  .places__content {
+    display: contents;
+  }
+
+  .places__title {
+    order: 1;
+  }
+  .places__text-group {
+    order: 2;
+  }
+  .places__image {
+    order: 3;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .places__image:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .places__paragraph,
+  .places__paragraph_text,
+  .places__text {
+    order: 4;
+  }
+  .places__frame {
+    order: 5;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .places__frame:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .places__paragraph,
+  .places__paragraph_text,
+  .places__text,
+  .places__frame,
+  .places__artist {
+    margin: 0;
+  }
+
+  .places__title {
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 32px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .places__text-group {
+    margin-bottom: 32px;
+  }
+
+  .places__image {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .places__paragraph + .places__paragraph_text,
+  .places__paragraph_text + .places__text,
+  .places__paragraph + .places__text {
+    margin-top: 24px;
+  }
+
+  .places__content > p:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .places__frame {
+    width: 100%;
+  }
 }
